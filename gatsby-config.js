@@ -11,7 +11,19 @@ module.exports = {
             options: {
                 name: `blog`,
                 path: `${__dirname}/blog`,
-        }
-    },
-    ]
+            },
+        
+        },
+        {
+            resolve: `gatsby-plugin-mdx`,
+            options: {
+                plugins: [
+                    'gatsby-remark-autolink-headers',
+                    'gatsby-remark-prismjs',
+                ],
+        },
+    }
+],
 }
+        
+    
