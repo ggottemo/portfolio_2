@@ -24,6 +24,11 @@
     font-weight: bold;
     color: #333;
 }
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .site-title{
     font-size: 3rem;
     font-weight: bold;

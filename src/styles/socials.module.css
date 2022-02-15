@@ -1,0 +1,12 @@
+.socialContainer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-left: auto;
+
+}
+.socialIcon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 2rem;
+}

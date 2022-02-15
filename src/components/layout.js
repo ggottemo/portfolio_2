@@ -8,7 +8,8 @@ import {
     navLinkText,
     siteTitle,
     } from '../styles/layout.module.css'
-import BlogPage from '../pages/blog'
+import Socials from './socials'
+import cv from "./cv.pdf"
 
 const Layout = ({  pageTitle, children }) => {
     const data = useStaticQuery(graphql`
@@ -24,7 +25,7 @@ const Layout = ({  pageTitle, children }) => {
     return (
         <div className={container}>
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-            <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+            <header className={siteTitle}>{data.site.siteMetadata.title}</header>         
             <nav>
                 <ul className={navLinks}>
                     <li className={navLinkItem}>
@@ -48,7 +49,10 @@ const Layout = ({  pageTitle, children }) => {
                             </Link>
                         </li>
                     <li className={navLinkItem}>
-                        <a href="static/cv.pdf" download="Gottemoeller.pdf" className={navLinkText}> Resume </a>
+                        <a href={cv} download="Gottemoeller.pdf" className={navLinkText}> Resume </a>
+                    </li>
+                    <li className={navLinkItem}>
+                        <Socials />
                     </li>
                 </ul>
                 </nav>
