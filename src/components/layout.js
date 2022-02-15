@@ -37,10 +37,18 @@ const Layout = ({  pageTitle, children }) => {
                             About
                             </Link>
                         </li>
-                    <li className={BlogPage}>
+                    <li className={navLinkItem}>
                         <Link to="/blog" className={navLinkText}>
                             Blog
                             </Link>
+                    </li>
+                    <li className={navLinkItem}>
+                        <Link to="/projects" className={navLinkText}>
+                            Projects
+                            </Link>
+                        </li>
+                    <li className={navLinkItem}>
+                        <a href="static/cv.pdf" download="Gottemoeller.pdf" className={navLinkText}> Resume </a>
                     </li>
                 </ul>
                 </nav>
