@@ -3,7 +3,7 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import Project from '../components/project'
 
-//prop variables
+//prop variables for each project
 const hulu = {
     title : 'Hulu 2.0 Clone',
     tags : ['Tailwind', 'React', 'APIs'],
@@ -15,7 +15,7 @@ const hulu = {
 const etch_js = {
     title : 'Etch.js',
     tags : ['JavaScript'],
-    description : 'A simple drawing application built with JavaScript.',
+    description : 'A simple drawing application built with JavaScript from The Odin Project.',
     github : 'https://github.com/ggottemo/etch-js',
     deployed : 'https://etch-js-ggottemo.vercel.app/',
 }
