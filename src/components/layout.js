@@ -26,25 +26,26 @@ const Layout = ({  pageTitle, children }) => {
         <div className={container}>
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
             <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-         
+            {/* Checkbox for mobile menu */}
+            <input type="checkbox" className="mobile-menu" />
+            <label class="hamb" for="mobile-menu">&#8801; </label>
             <nav>
                 <ul className={navLinks}>
-                    <li className={navLinkItem}>
                         <Link to="/" className={navLinkText}>
+                        <li className={navLinkItem}>
                              Home
-                            </Link>
-                        </li>
-
+                             </li>
+                            </Link>                        
+                    <Link to="/blog" className={navLinkText}>
                     <li className={navLinkItem}>
-                        <Link to="/blog" className={navLinkText}>
-                            Blog
-                            </Link>
+                            Blog   
                     </li>
+                    </Link>
+                    <Link to="/projects" className={navLinkText}>
                     <li className={navLinkItem}>
-                        <Link to="/projects" className={navLinkText}>
                             Projects
-                            </Link>
                         </li>
+                        </Link>
                     <li className={navLinkItem}>
                         <a href={cv} download="Gottemoeller.pdf" className={navLinkText}> Resume </a>
                     </li>
