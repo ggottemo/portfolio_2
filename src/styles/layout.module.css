@@ -36,6 +36,7 @@ input[type="checkbox"] {
 .nav-link-item {
    padding-right: 2rem;
    background-color: azure;
+   display: none;
    
 }
 .nav-link-text {
@@ -46,5 +47,11 @@ input[type="checkbox"] {
 /* socials */
 .socialContainer {
     float:right;
+    display: block;
+}
+.hamb:hover {
+    cursor: pointer;
+}
+.navActive {
     display: block;
 }
