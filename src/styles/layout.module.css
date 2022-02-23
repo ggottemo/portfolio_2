@@ -1,57 +1,100 @@
 /* DEV ONLY! */
 *{
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
 }
 /* Generic */
+:root {
+    --bg: #8d99ae;
+    --bg-dark: hsl(235, 21%, 21%);
+    --text-color: #edf2f4;
+    --text-bright: #ef233c;
+    --nav-size: 60px;
+    --border: 1px solid #333;
+    --border-radius: 5px;
+    --speed: 500ms;
+}
+/* overwrite default list */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* overwrite default link */
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
 .container {
     max-width: 960px;
     margin: auto;
-    padding: 0 20px;
+    padding: 0px 20px 40px;
     font-family: sans-serif;
-    background-color: aliceblue;
+    background-color: var(--bg-dark);
+    border-radius: var(--border-radius);
 }
 .heading {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: red
+    color: var(--text-color);
 }
 .site-title{
     font-size: 3rem;
     font-weight: bold;
-    color: #333;
+    color: var(--text-color);
 }
 /* nav */
 input[type="checkbox"] {
     display: none;
 }
+nav {
+    height: var(--nav-size);
+    background-color: var(--bg-dark);
+    padding: 0 1rem;
+    
+}
 .nav-links {
     display: flex;
     list-style: none;
     padding-left: 0;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    overflow-x: scroll;
     
 }
 .nav-link-item {
-   padding-right: 2rem;
-   background-color: azure;
-   display: none;
+   padding-right: 1rem;
+   padding-left: 1rem;
+   background-color: var(--bg-dark);
+   transition: background .5s ease;
    
+   
+}
+.nav-link-item:hover {
+
+    background-color: var(--bg);
 }
 .nav-link-text {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #333;
+    color: var(--text-color);
+}
+/* links */
+a {
+    transition: color .5s ease;
+}
+a:hover {
+    color: var(--text-bright);
 }
 /* socials */
 .socialContainer {
     float:right;
     display: block;
 }
-.hamb:hover {
-    cursor: pointer;
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg);
 }
-.navActive {
-    display: block;
-}
+
+
