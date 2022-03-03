@@ -86,11 +86,7 @@ a {
 a:hover {
     color: var(--text-bright);
 }
-/* socials */
-.socialContainer {
-    float:right;
-    display: block;
-}
+
 body {
     padding: 0;
     margin: 0;
