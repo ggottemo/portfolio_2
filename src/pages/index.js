@@ -9,10 +9,10 @@ const IndexPage = () => {
     
     <Layout pageTitle="About Me">
       <p>Hi there! I'm the proud creator of this WIP site, which I built with Gatsby.</p>
-      <StaticImage 
+      {/* <StaticImage 
       alt="Night Sky"
       src="../images/blue_night.png"
-      />
+      /> */}
     </Layout>
   )
 }
