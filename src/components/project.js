@@ -4,7 +4,7 @@ import {
     project,
     project_tags,
     project_description,
-    tag_Tailwind,
+    
     
 } from "../styles/project.module.css"
 import "../styles/project.css"
