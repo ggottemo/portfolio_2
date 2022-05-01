@@ -1,12 +1,4 @@
-:root {
-    --bg: #8d99ae;
-    --bg-dark: hsl(235, 21%, 21%);
-    --text-color: #edf2f4;
-    --nav-size: 60px;
-    --border: 1px solid #333;
-    --border-radius: 5px;
-    --speed: 500ms;
-}
+
 /* overwrite default list */
 ul {
     list-style: none;

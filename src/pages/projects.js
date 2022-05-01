@@ -32,6 +32,7 @@ const python_scripts = {
 const ProjectsPage = () => {
   return (
     <Layout pageTitle="Projects">
+      
       <p>This is the projects page</p>
         <Project {...hulu} />
         <Project {...etch_js} />
