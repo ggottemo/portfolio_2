@@ -4,9 +4,11 @@
 background-color: var(--bg-mid);
 border-radius: 5px;
 margin-bottom: 5vh;
-padding: 1em;
+padding: 1.5em;
 box-shadow: 1px 1px 5px   black;
-
+max-width: 500px;
+height: 25vh;
+min-height: 350px;
 }
 .project>a{
     font-weight: bolder;
@@ -32,3 +34,11 @@ box-shadow: 1px 1px 5px   black;
     transform: var(--tag-hover-scale);
 }
 
+#projectContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2em;
+}

@@ -2,6 +2,9 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import Project from '../components/project'
+import {
+  projectContainer,
+} from '../styles/project.module.css'
 
 //prop variables for each project
 const hulu = {
@@ -34,9 +37,11 @@ const ProjectsPage = () => {
     <Layout pageTitle="Projects">
       
       <p>This is the projects page</p>
+      <div id={projectContainer} >
         <Project {...hulu} />
         <Project {...etch_js} />
         <Project {...python_scripts} />
+        </div>
     </Layout>
   )
 }
