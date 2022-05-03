@@ -1,24 +1,33 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/layout'
+import {
+    article,
+    articleContainer,
+    articleTitle,
+    articleDate,
+    articleModified,
+} from '../../styles/blog.module.css'
 
 // Map all MDX nodes for blog pages
 const BlogPage = ({ data }) => {
     return (
         <Layout pageTitle="Blog Posts">
             {
+                // <div className={articleContainer}>
                 data.allMdx.nodes.map((node) => (
-                    <article key={node.id}>
-                        <h2>
+                    <article key={node.id} className={article}>
+                        <h2 className={articleTitle}>
                             <Link to={`/blog/${node.slug}`}>
                             {node.frontmatter.title}
                             </Link>
                             </h2>
-                        <p>Posted: {node.frontmatter.datePublished}</p>
-                        <p>Modified: {node.parent.modifiedTime}</p>
+                        <p className={articleDate}>Posted: {node.frontmatter.datePublished}</p>
+                        <p className={articleModified}>Modified: {node.parent.modifiedTime}</p>
                         </article>
-                       
+                      
                 ))
+                // </div> 
             }
         </Layout>
     )

@@ -1,0 +1,19 @@
+.articleContainer {
+
+}
+.article {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--bg-mid);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+.articleTitle {
+    
+}
+.articleDate {
+
+}
+.articleModified {
+ color: rgb(51, 51, 51);
+}
