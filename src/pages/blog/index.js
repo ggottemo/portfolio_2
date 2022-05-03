@@ -13,8 +13,9 @@ import {
 const BlogPage = ({ data }) => {
     return (
         <Layout pageTitle="Blog Posts">
+             <div className={articleContainer}>
             {
-                // <div className={articleContainer}>
+                
                 data.allMdx.nodes.map((node) => (
                     <article key={node.id} className={article}>
                         <h2 className={articleTitle}>
@@ -27,8 +28,9 @@ const BlogPage = ({ data }) => {
                         </article>
                       
                 ))
-                // </div> 
+               
             }
+              </div> 
         </Layout>
     )
 }
