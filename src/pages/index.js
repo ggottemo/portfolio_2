@@ -5,8 +5,12 @@ import Project from '../components/project'
 import {
   projectContainer,
 } from '../styles/project.module.css'
+import {heading,
+} from '../styles/layout.module.css'
 import { StaticImage } from 'gatsby-plugin-image'
-
+import {
+  articleContainer
+} from '../styles/blog.module.css'
 //prop variables for each project
 const hulu = {
   title : 'Hulu 2.0 Clone',
@@ -35,17 +39,21 @@ const IndexPage = () => {
   return (
     
     <Layout pageTitle="About Me">
+      <div className={articleContainer}>
       <p>Hi there! I'm the proud creator of this WIP site, which I built with Gatsby.</p>
       {/* <StaticImage 
       alt="Night Sky"
       src="../images/blue_night.png"
       /> */}
-      <h3>Projects</h3>
+      </div>
+      
+      <h1 className={heading}>Projects</h1>
       <div id={projectContainer} >
         <Project {...hulu} />
         <Project {...etch_js} />
         <Project {...python_scripts} />
         </div>
+      
     </Layout>
     
   )
